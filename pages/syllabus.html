@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <title>Course Syllabus</title>
+    <style>
+        #contentHead {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            background-image: url("../Images/codeBackground.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #courseInfo {
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            background-color: rgba(243, 243, 243, .7);
+            padding: 2em;
+            margin-left: 150px;
+        }
+
+        table {
+            text-align: left;
+            border-collapse: collapse;
+            margin-bottom: 2em;
+        }
+
+        td {
+            border-bottom: 2px solid black;
+            padding: 0.4em;
+        }
+
+        #headBtns {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        #registerBtn, #registerBtn:visited {
+            color: white;
+            background-color: #f40000;
+            text-decoration: none;
+            padding: 1em;
+            border: 5px solid #f40000;
+            border-radius: 15px;
+        }
+
+        #registerBtn:hover {
+            color: #f40000;
+            background-color: white;
+            border: 5px solid white;
+            border-radius: 15px;
+        }
+
+        #registerBtn:active {
+            color: white;
+            background-color: black;
+            border: 5px solid black;
+            border-radius: 15px;
+        }
+
+        #moreBtn, #moreBtn:visited {
+            color: white;
+            background-color: black;
+            text-decoration: none;
+            padding: 1em;
+            border: 5px solid black;
+            border-radius: 15px;
+        }
+
+        #moreBtn:hover {
+            color: black;
+            background-color: white;
+            border: 5px solid white;
+            border-radius: 15px;;
+        }
+
+        #moreBtn:active {
+            color: white;
+            background-color: #f40000;
+            border: 5px solid #f40000;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="Crt">
+        <!--MENU & HEADER-->
+        <div id="header">
+            <button id="menu-toggle">☰ Menu</button>
+            <div id="menu">
+                <button id="menu-close">✕</button>
+                <div id="menuLinks">
+                    <a class="menuLink" href="../index.html">Home</a>
+                    <a class="menuLink" href="syllabus.html">Syllabus</a>
+                    <a class="menuLink" href="form.html">Registration Form</a>
+                    <a class="menuLink" href="class.html">Class Materials & Quizzes</a>
+                    <a class="menuLink" href="about.html">About Us</a>
+                    <a class="menuLink" href="faq.html">FAQs</a>
+                </div>
+
+            </div>
+
+            <a href="index.html" id="headerLink"><img src="../Images/javaIcon.svg" alt="Java Icon"
+                    style="width: 2.5em;">
+                <h1>Java</h1>
+            </a>
+        </div>
+
+        <!--CONTENT-->
+
+        <div id="content">
+            <div id="contentHead">
+                <div id="courseInfo">
+                    <h2 style="color:#f40000">Barbados Community College</h2>
+
+                    <br />
+
+                    <h1>COMP 151 Java</h1>
+
+                    <table>
+                        <tr>
+                            <td>Course Tutor</td>
+                            <td>Chris Smith</td>
+                        </tr>
+
+                        <tr>
+                            <td>Course Code</td>
+                            <td>COMP 151</td>
+                        </tr>
+
+                        <tr>
+                            <td>Hours To Complete</td>
+                            <td>45</td>
+                        </tr>
+
+                        <tr>
+                            <td>Start Date</td>
+                            <td>August 22nd</td>
+                        </tr>
+
+                        <tr>
+                            <td>Course type</td>
+                            <td>Online</td>
+                        </tr>
+                    </table>
+
+                    <div id="headBtns">
+                        <a id="registerBtn" href="form.html">Register Today!</a>
+                        <a id="moreBtn" href="https://tridentlearning-m2.remote-learner.net/pluginfile.php/688996/mod_resource/content/1/COMP%20151%20-%20Program%20Implementation%20%20Manual%20REVISED%20Jan%20%202019%20%281%29.pdf">
+                        Learn More!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--FOOTER-->
+
+        <div id="footer">
+            <p>Email <a href="mailto:chris.smith@bcc.edu.bb">Chris Smith</a> with any questions about the course!</p>
+            <p>And visit BCC official website <a href="https://bcc.edu.bb/" target="_blank">here!</a></p>
+        </div>
+    </div>
+    <script>
+        //code to get the menu open and close button.
+        const menuToggle = document.getElementById('menu-toggle');
+        const menuClose = document.getElementById('menu-close');
+
+        //Event listeners used to open and close the menu on click.
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+        });
+
+        menuClose.addEventListener('click', () => {
+            menuToggle.classList.remove('active');
+        });
+    </script>
+</body>
+
+</html>

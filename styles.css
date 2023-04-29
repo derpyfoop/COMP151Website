@@ -63,6 +63,7 @@ html {
     list-style: none;
     text-align: left;
     font-size: larger;
+    font-weight: bold;
 }
 
 .menuLink,
@@ -150,9 +151,15 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     /* flex-grow makes the content take up all available space within its container */
     flex-grow: 1;
     margin: 2em;
+    box-shadow: rgba(0, 0, 0, 0.55) 0px 54px 55px, 
+    rgba(0, 0, 0, 0.52) 0px -12px 30px, 
+    rgba(0, 0, 0, 0.12) 0px 4px 6px, 
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 /* FOOTER */
