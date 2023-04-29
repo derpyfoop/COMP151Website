@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Home</title>
+    <style>
+        #content {
+            display: flex;
+            flex-direction: column;
+            box-shadow: rgba(0, 0, 0, 0.55) 0px 54px 55px, 
+            rgba(0, 0, 0, 0.52) 0px -12px 30px, 
+            rgba(0, 0, 0, 0.12) 0px 4px 6px, 
+            rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+            rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+
+        #sectionOne {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 5em;
+            background-color: black;
+            color: white;
+
+        }
+
+        #sectionTwo {
+            width: 100%;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 5em;
+            background-color: #f40000;
+            color: white;
+        }
+
+        #sectionThree {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+            color: white;
+        }
+
+        .titleAndText {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 50%;
+            padding: 1em;
+            gap: 1em;
+        }
+
+        .titleAndText a,
+        .titleAndText a:visited {
+            text-decoration: none;
+            color: #f40000;
+        }
+
+        .titleAndText a:hover {
+            color: white;
+        }
+
+        .titleAndText a:active {
+            color: #f40000
+        }
+    </style>
+</head>
+
+<body>
+    <div id="Crt">
+        <!--MENU & HEADER-->
+        <div id="header">
+            <button id="menu-toggle">☰ Menu</button>
+            <div id="menu">
+                <button id="menu-close">✕</button>
+                <div id="menuLinks">
+                    <a class="menuLink" href="index.html">Home</a>
+                    <a class="menuLink" href="syllabus.html">Syllabus</a>
+                    <a class="menuLink" href="form.html">Registration Form</a>
+                    <a class="menuLink" href="class.html">Class Materials & Quizzes</a>
+                    <a class="menuLink" href="about.html">About Us</a>
+                    <a class="menuLink" href="faq.html">FAQs</a>
+                </div>
+
+            </div>
+
+            <a href="index.html" id="headerLink"><img src="Images/javaIcon.svg" alt="Java Icon" style="width: 2.5em;">
+                <h1>Java</h1>
+            </a>
+        </div>
+
+        <!--CONTENT-->
+
+        <div id="content">
+            <div id="sectionOne">
+                <div class="titleAndText">
+                    <h1>The Barbados Community Is Proud To Offer Comp151</h1>
+                    <p>Comp151 is a course designed to provide a general understanding of the writing of a program, with
+                        an
+                        emphasis on the correctness of techniques for program writing through the use of the programmin
+                        language Java.</p>
+                </div>
+                <img src="Images/stockJavaImg.jpg" alt="Java Stock Photo" width="40%" style="margin: 3em 3em 0 0; border: 5px solid #f40000; border-radius: 15px;">
+            </div>
+
+            <div id="sectionTwo">
+                <div class="titleAndText">
+                    <h1>What is Java?</h1>
+                    <p>Java is a high-level, class-based, object-oriented programming language that is designed to have
+                        as
+                        few implementation dependencies as possible.</p>
+                </div>
+                <img src="Images/blogheaderjava.png" alt="Java graphic" width="40%" style="margin: 3em 0 0 3em; border: 5px solid black; border-radius: 15px;">
+            </div>
+
+            <div id="sectionThree">
+                <div class="titleAndText">
+                    <h1>Learn More Or Sign Up!</h1>
+                    <p>Learn more about this course <a href="syllabus.html">here</a> or skip the reading and dive head
+                        first
+                        into this course by <a href="form.html">signing up today!</a></p>
+                </div>
+                <a href="form.html" style="display: contents;"><img src="Images/signup.svg" alt="Java graphic" width="30%" style="margin: 3em 3em 0 0;"></a>
+            </div>
+        </div>
+
+        <!--FOOTER-->
+
+        <div id="footer">
+            <p>Email <a href="mailto:chris.smith@bcc.edu.bb">Chris Smith</a> with any questions about the course!</p>
+            <p>And visit BCC official webisite <a href="https://bcc.edu.bb/" target="_blank">here!</a></p>
+        </div>
+    </div>
+    <script>
+        //code to get the menu open and close button.
+        const menuToggle = document.getElementById('menu-toggle');
+        const menuClose = document.getElementById('menu-close');
+
+        //Event listeners used to open and close the menu on click.
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+        });
+
+        menuClose.addEventListener('click', () => {
+            menuToggle.classList.remove('active');
+        });
+    </script>
+</body>
+
+</html>

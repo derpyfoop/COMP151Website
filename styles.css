@@ -1,0 +1,187 @@
+/* Small CSS reset */
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100%;
+    display: inline-block;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    background-color: #eff0f1;
+}
+
+#Crt {
+    /*min-height right now is forcing the webpage to take up all of the devices viewport */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* MENU AND HEAD */
+
+#header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    position: sticky;
+    top: 0%;
+    background-color: #f40000;
+    color: white;
+    text-align: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+        rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+#headerLink {
+    text-decoration: none;
+    display: contents;
+    color: currentColor;
+}
+
+#menu-toggle {
+    position: fixed;
+    top: 20px;
+    left: 10px;
+    background-color: black;
+    color: #fff;
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2em;
+}
+
+#menuLinks {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    list-style: none;
+    text-align: left;
+}
+
+.menuLink,
+.menuLink:visited {
+    text-decoration: none;
+    padding: 1em;
+    color: black;
+}
+
+.menuLink:hover {
+    background-color: black;
+    color: white;
+}
+
+.menuLink:active {
+    background-color: white;
+    color: black;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+        rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+#menu-toggle:hover {
+    background-color: white;
+    color: black;
+}
+
+#menu-toggle:active {
+    background-color: white;
+    color: black;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+        rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+/* Creating a side menu off the webpage to be called into view by click event */
+#menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: -400px;
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    list-style: none;
+    margin: 0;
+    padding: 60px 20px 20px;
+    transition: transform 0.3s ease-in-out;
+    background-color: #ECEFF1;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+}
+
+/* Moves the menu into view when activated */
+#menu-toggle.active+#menu {
+    transform: translateX(400px);
+}
+
+#menu-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2em;
+}
+
+#menu-close:hover {
+    background-color: white;
+    color: black;
+}
+
+#menu-close:active {
+    background-color: white;
+    color: black;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+        rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+/* CONTENT */
+
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-grow makes the content take up all available space within its container */
+    flex-grow: 1;
+    margin: 2em;
+}
+
+/* FOOTER */
+
+#footer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: black;
+    background-image: url(Images/javaIconRed.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 1em;
+    margin-top: auto;
+    color: white;
+    /* z-index specifies the stack order of elements, higher number is always in front */
+    z-index: 1;
+}
+
+#footer a,
+#footer a:visited {
+    text-decoration: none;
+    color: #f40000;
+}
+
+#footer a:hover {
+    color: white;
+}
+
+#footer a:active {
+    color: #f40000
+}
