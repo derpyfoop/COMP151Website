@@ -12,6 +12,7 @@
             width: 100%;
             display: flex;
             flex-direction: column;
+            align-items: center;
             background-image: url("../Images/codeBackground.jpg");
             background-repeat: no-repeat;
             background-size: cover;
@@ -20,10 +21,10 @@
         #courseInfo {
             display: flex;
             flex-direction: column;
-            width: 40%;
+            flex-wrap: wrap;
+            width: fit-content;
             background-color: rgba(243, 243, 243, .7);
             padding: 2em;
-            margin-left: 150px;
         }
 
         table {
@@ -43,7 +44,8 @@
             justify-content: space-around;
         }
 
-        #registerBtn, #registerBtn:visited {
+        #registerBtn,
+        #registerBtn:visited {
             color: white;
             background-color: #f40000;
             text-decoration: none;
@@ -66,7 +68,8 @@
             border-radius: 15px;
         }
 
-        #moreBtn, #moreBtn:visited {
+        #moreBtn,
+        #moreBtn:visited {
             color: white;
             background-color: black;
             text-decoration: none;
@@ -79,7 +82,8 @@
             color: black;
             background-color: white;
             border: 5px solid white;
-            border-radius: 15px;;
+            border-radius: 15px;
+            ;
         }
 
         #moreBtn:active {
@@ -87,6 +91,54 @@
             background-color: #f40000;
             border: 5px solid #f40000;
             border-radius: 15px;
+        }
+
+        #courseOutline {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            background-color: black;
+            color: white;
+            padding: 2em;
+        }
+
+        .weekLeft {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            background-color: #f40000;
+            padding: 2em;
+            color: white;
+        }
+
+        .weekRight {
+            width: 100%;
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            background-color: black;
+            padding: 2em;
+            color: white;
+        }
+
+        .weekAndNum {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 5px solid white;
+            border-radius: 50%;
+            height: 150px;
+            width: 150px;
+        }
+
+        .topicAndList li {
+            padding: .5em;
         }
     </style>
 </head>
@@ -144,20 +196,175 @@
 
                         <tr>
                             <td>Start Date</td>
-                            <td>August 22nd</td>
+                            <td>August 22nd 2023</td>
                         </tr>
 
                         <tr>
                             <td>Course type</td>
                             <td>Online</td>
                         </tr>
+
+                        <tr>
+                            <td>Course work</td>
+                            <td>40%</td>
+                        </tr>
+
+                        <tr>
+                            <td>Exam</td>
+                            <td>60%</td>
+                        </tr>
                     </table>
 
                     <div id="headBtns">
                         <a id="registerBtn" href="form.html">Register Today!</a>
-                        <a id="moreBtn" href="https://tridentlearning-m2.remote-learner.net/pluginfile.php/688996/mod_resource/content/1/COMP%20151%20-%20Program%20Implementation%20%20Manual%20REVISED%20Jan%20%202019%20%281%29.pdf">
-                        Learn More!</a>
+                        <a id="moreBtn"
+                            href="https://tridentlearning-m2.remote-learner.net/pluginfile.php/688996/mod_resource/content/1/COMP%20151%20-%20Program%20Implementation%20%20Manual%20REVISED%20Jan%20%202019%20%281%29.pdf">
+                            Learn More!</a>
                     </div>
+                </div>
+            </div>
+
+            <div id="courseOutline">
+                <h2>Course Outline</h2>
+
+                <br>
+                <hr style="width: 100%;">
+                <br>
+
+                <p>This course is designed to:</p>
+
+                <ol>
+                    <li>Introduce students to the history of programming languages.</li>
+                    <li>Introduce students to the sequence of steps associated with implementing a program.</li>
+                    <li>Introduce students to the concepts of program implementation.</li>
+                    <li>Introduce students to the use of control structures in program implementation.</li>
+                    <li>Enable students to identify and manipulate data in a list.</li>
+                    <li>Introduce students to the testing of programs.</li>
+                    <li>Enable students to perform the documentation of programs.</li>
+                    <li>Provide students with the opportunities to write, implement, evaluate and redesign
+                        programs as needed.</li>
+                </ol>
+            </div>
+
+            <div class="weekLeft">
+                <div class="weekAndNum">
+                    <h1>1st</h1>
+                    <h1>WEEK</h1>
+                </div>
+                <div class="topicAndList">
+                    <h2>Topics</h2>
+                    <ol>
+                        <li>Low-Level language (Machine or Assembly).</li>
+                        <li>High-level language (Java).</li>
+                        <li>Generations of programming languages: first to fifth generation.</li>
+                        <li>Characteristics of first to fifth generation languages.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="weekRight">
+                <div class="weekAndNum">
+                    <h1>2nd</h1>
+                    <h1>WEEK</h1>
+                </div>
+                <div class="topicAndList">
+                    <h2>Topics</h2>
+                    <ol>
+                        <li>The steps: create source code, compile, link, execute, maintain program</li>
+                        <li>Explain each of the steps</li>
+                        <li>Terms: testing, debugging, syntax errors, logic errors, run-time errors, dry run, test data
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="weekLeft">
+                <div class="weekAndNum">
+                    <h1>3rd</h1>
+                    <h1>WEEK</h1>
+                </div>
+                <div class="topicAndList">
+                    <h2>Topics</h2>
+                    <ol>
+                        <li>Elementary data types: integers, real numbers, characters</li>
+                        <li>Use of meaningful variable names and constants, assignment of initial values</li>
+                        <li>Manipulation of data: reading from and writing to variables, arithmetic operations</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="weekRight">
+                <div class="weekAndNum">
+                    <h1>4th</h1>
+                    <h1>WEEK</h1>
+                </div>
+                <div class="topicAndList">
+                    <h2>Topics</h2>
+                    <ol>
+                        <li>Conditional branching – if-then, if-then-else</li>
+                        <li>Loops (or repetition) – while, repeat, for</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="weekLeft">
+                <div class="weekAndNum">
+                    <h1>5th</h1>
+                    <h1>WEEK</h1>
+                </div>
+                <div class="topicAndList">
+                    <h2>Topics</h2>
+                    <ol>
+                        <li>One-dimensional (1-D) array</li>
+                        <li>Reading from and writing to a 1-D array</li>
+                        <li>Traversing the array</li>
+                        <li>Performing linear search on the array</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="weekRight">
+                <div class="weekAndNum">
+                    <h1>6th</h1>
+                    <h1>WEEK</h1>
+                </div>
+                <div class="topicAndList">
+                    <h2>Topics</h2>
+                    <ol>
+                        <li>Testing techniques</li>
+                        <li>Debugging techniques</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="weekLeft">
+                <div class="weekAndNum">
+                    <h1>7th</h1>
+                    <h1>WEEK</h1>
+                </div>
+                <div class="topicAndList">
+                    <h2>Topics</h2>
+                    <ol>
+                        <li>Documentation: its importance</li>
+                        <li>Features of internal documentation – use of mnemonic names, use of comments, indentation,
+                            effective use of white space</li>
+                        <li>Features of external documentation</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="weekRight">
+                <div class="weekAndNum">
+                    <h1>8th</h1>
+                    <h1>WEEK</h1>
+                </div>
+                <div class="topicAndList">
+                    <h2>Topics</h2>
+                    <ol>
+                        <li>Program creation</li>
+                        <li>Testing and debugging of program</li>
+                        <li>Documentation for programming</li>
+                    </ol>
                 </div>
             </div>
         </div>
