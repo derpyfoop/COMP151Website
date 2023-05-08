@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/x-icon" href="../Images/javaOriginal.svg">
     <title>Sign Up</title>
     <style>
         #signUpHead {
@@ -150,8 +151,10 @@
             width: 100%;
             display: flex;
             flex-direction: row;
+            flex-wrap: wrap;
             justify-content: space-around;
             padding-top: 2em;
+            gap: 1em;
         }
 
         #submit {
@@ -214,8 +217,8 @@
 
             </div>
 
-            <a href="index.html" id="headerLink"><img src="../Images/javaIcon.svg" alt="Java Icon"
-                    style="width: 2.5em;">
+            <a href="../index.html" id="headerLink"><img src="../Images/javaIcon.svg" alt="Java Icon"
+                    style="width: 2.5em;"/>
                 <h1>Java</h1>
             </a>
         </div>
@@ -234,17 +237,17 @@
                         <h4>Personal Information</h4>
                         <div>
                             <label for="name">Full Name:</label>
-                            <input type="text" name="name" id="name" placeholder="Full Name" required>
+                            <input type="text" name="name" id="name" placeholder="Full Name" required/>
                         </div>
 
                         <div>
                             <label for="email">Email Address:</label>
-                            <input type="email" name="email" id="email" placeholder="YourEmail@Address.com" required>
+                            <input type="email" name="email" id="email" placeholder="YourEmail@Address.com" required/>
                         </div>
 
                         <div>
                             <label for="cphone">Cell Number:</label>
-                            <input type="tel" name="cphone" id="phone" placeholder="+1 (246) 000-0000" required>
+                            <input type="tel" name="cphone" id="phone" placeholder="+1 (246) 000-0000" required/>
                         </div>
                     </div>
 
@@ -252,11 +255,11 @@
                         <div id="birth">
                             <h4>Date Of Birth</h4>
                             <div id="birthInput">
-                                <input type="text" id="birthDay" placeholder="DD" maxlength="2" minlength="2" required>
+                                <input type="text" id="birthDay" placeholder="DD" maxlength="2" minlength="2" required/>
                                 <input type="text" id="birthMonth" placeholder="MM" maxlength="2" minlength="2"
-                                    required>
+                                    required/>
                                 <input type="text" id="birthYear" placeholder="YYYY" maxlength="4" minlength="4"
-                                    required>
+                                    required/>
                             </div>
                         </div>
 
@@ -264,11 +267,11 @@
                             <h4>Gender</h4>
                             <div id="genderInput">
                                 <div class="btn">
-                                    <input type="radio" name="gender" id="gender" value="male" required>
+                                    <input type="radio" name="gender" id="gender" value="male" required/>
                                     <label for="gender">Male</label>
                                 </div>
                                 <div class="btn">
-                                    <input type="radio" name="gender" id="gender" value="Female" required>
+                                    <input type="radio" name="gender" id="gender" value="Female" required/>
                                     <label for="gender">Female</label>
                                 </div>
                             </div>
@@ -281,17 +284,17 @@
                         <div>
                             <label for="streetAd">Street Address:</label>
                             <input type="text" name="streetAd" id="StreetAd" placeholder="#123 Somewhere Drive"
-                                required>
+                                required/>
                         </div>
 
                         <div>
                             <label for="city">City:</label>
-                            <input type="text" name="city" id="city" placeholder="Bridgetown" required>
+                            <input type="text" name="city" id="city" placeholder="Bridgetown" required/>
                         </div>
 
                         <div>
                             <label for="country">Country:</label>
-                            <select id="country" name="country" required>
+                            <select id="country" name="country" required/>
                                 <option>Select A Country</option>
                                 <option value="AF">Afghanistan</option>
                                 <option value="AX">Åland Islands</option>
@@ -547,8 +550,8 @@
                     </div>
 
                     <div id="formBtns">
-                        <input type="submit" id="submit" value="Submit">
-                        <input type="reset" id="reset" value="Reset">
+                        <input type="submit" id="submit" value="Submit"/>
+                        <input type="reset" id="reset" value="Reset"/>
                     </div>
 
                 </form>
@@ -563,20 +566,7 @@
             <p>And visit BCC official website <a href="https://bcc.edu.bb/" target="_blank">here!</a></p>
         </div>
     </div>
-    <script>
-        //code to get the menu open and close button.
-        const menuToggle = document.getElementById('menu-toggle');
-        const menuClose = document.getElementById('menu-close');
-
-        //Event listeners used to open and close the menu on click.
-        menuToggle.addEventListener('click', () => {
-            menuToggle.classList.toggle('active');
-        });
-
-        menuClose.addEventListener('click', () => {
-            menuToggle.classList.remove('active');
-        });
-    </script>
+    <script src="../script.js"></script>
 </body>
 
 </html>

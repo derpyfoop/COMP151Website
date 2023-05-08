@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/x-icon" href="../Images/javaOriginal.svg">
+    <title>FAQs</title>
+    <style>
+        #title {
+            margin-top: 1em;
+            margin-bottom: 1em;
+            font-size: 2.5em;
+        }
+
+        .faq {
+            max-width: 700px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding-top: 2em;
+            padding-bottom: 1em;
+            margin-bottom: 1em;
+            border-bottom: 2px solid #f40000;
+            /* cursor: pointer; changes the cursor to pointer when hovered over element */
+            cursor: pointer;
+        }
+
+        /* To give a slightly cleaner look on devices with screen width of less than 990px */
+
+        @media screen and (max-width:990px) {
+            .faq {
+                margin-left: 1em;
+                margin-right: 1em;
+            }
+        }
+
+        .faq.active .answer {
+            max-height: 800px;
+        }
+
+        .faq.active img {
+            transform: rotate(180deg);
+        }
+
+        img {
+            transition: 0.4s ease-in;
+        }
+
+        .question {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.5em;
+
+        }
+
+        .answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 1.4s ease;
+        }
+
+        .answer p {
+            padding-top: 1em;
+            /* line-height sets the space between lines of text */
+            line-height: 1.6;
+            font-size: 1.3em;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="Crt">
+        <!--MENU & HEADER-->
+        <div id="header">
+            <button id="menu-toggle">☰ Menu</button>
+            <div id="menu">
+                <button id="menu-close">✕</button>
+                <div id="menuLinks">
+                    <a class="menuLink" href="../index.html">Home</a>
+                    <a class="menuLink" href="syllabus.html">Syllabus</a>
+                    <a class="menuLink" href="form.html">Registration Form</a>
+                    <a class="menuLink" href="class.html">Class Materials & Quizzes</a>
+                    <a class="menuLink" href="about.html">About Us</a>
+                    <a class="menuLink" href="faq.html">FAQs</a>
+                </div>
+
+            </div>
+
+            <a href="../index.html" id="headerLink"><img src="../Images/javaIcon.svg" alt="Java Icon"
+                    style="width: 2.5em;" />
+                <h1>Java</h1>
+            </a>
+        </div>
+
+        <!--CONTENT-->
+
+        <div id="content">
+            <h2 id="title">Frequently Asked Questions</h2>
+
+            <div class="faq">
+                <div class="question">
+                    <h3>What is Java, and why should I learn it?</h3>
+
+                    <img src="../Images/arrow.svg" alt="drop" width="30em" />
+                </div>
+
+                <div class="answer">
+                    <p>Java is a general-purpose, object-oriented programming language that is used to develop a wide
+                        range of applications. It is designed to be platform-independent, which means that Java code can
+                        be run on any computer or mobile device without the need for specific hardware or software. Java
+                        is widely used in industry, particularly in enterprise software development, mobile app
+                        development, and web development. Learning Java can provide you with a solid foundation in
+                        programming, which can help you build a career in the tech industry.</p>
+                </div>
+            </div>
+
+            <div class="faq">
+                <div class="question">
+                    <h3>What are the prerequisites for learning Java?</h3>
+
+                    <img src="../Images/arrow.svg" alt="drop" width="30em" />
+                </div>
+
+                <div class="answer">
+                    <p>To learn Java, you should have a basic understanding of programming concepts such as variables,
+                        data types, control structures, and functions. Familiarity with another programming language can
+                        also be helpful, but it is not essential. Additionally, you will need a computer with a Java
+                        Development Kit (JDK) installed, a code editor, and access to online resources and tutorials.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq">
+                <div class="question">
+                    <h3>How difficult is it to learn Java?</h3>
+
+                    <img src="../Images/arrow.svg" alt="drop" width="30em" />
+                </div>
+
+                <div class="answer">
+                    <p>Learning Java can be challenging, especially if you are new to programming. However, with
+                        dedication and consistent practice, anyone can learn Java. Java has a large community of
+                        developers, which means that there are many resources available to help you learn. To make
+                        learning Java easier, it's recommended to start with the basics and gradually work your way up
+                        to more advanced topics.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq">
+                <div class="question">
+                    <h3>What kind of job opportunities are available for Java developers?</h3>
+
+                    <img src="../Images/arrow.svg" alt="drop" width="30em" />
+                </div>
+
+                <div class="answer">
+                    <p>There are a variety of job opportunities available for Java developers. Java is widely used in
+                        enterprise software development, which means that there is a high demand for Java developers in
+                        industries such as finance, healthcare, and telecommunications. Java is also used in mobile app
+                        development and web development. Some common job titles for Java developers include Java
+                        Developer, Software Engineer, Application Developer, and Web Developer. The job market for Java
+                        developers is generally strong, with competitive salaries and opportunities for career
+                        advancement.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq">
+                <div class="question">
+                    <h3>How much does this course cost?</h3>
+
+                    <img src="../Images/arrow.svg" alt="drop" width="30em" />
+                </div>
+
+                <div class="answer">
+                    <p>This particular course is being offered at a cost of $365.00 Barbados dollars, which includes all
+                        necessary materials and resources required for the course. Attending this course provides an
+                        opportunity to learn and develop valuable skills in Java programming that can open doors to
+                        various career paths in the tech industry. The cost of the course is an investment in your
+                        future, as it can lead to better job prospects and higher earning potential. Additionally, the
+                        knowledge gained from this course can be applied to various real-world scenarios and can help
+                        you develop solutions to complex problems. With a small fee of $365.00 Barbados dollars, you can
+                        gain valuable skills and knowledge that can help you succeed in your career.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!--FOOTER-->
+
+        <div id="footer">
+            <p>Email <a href="mailto:chris.smith@bcc.edu.bb">Chris Smith</a> with any questions about the course!</p>
+            <p>And visit BCC official website <a href="https://bcc.edu.bb/" target="_blank">here!</a></p>
+        </div>
+    </div>
+    <script src="../script.js"></script>
+    <script>
+        const faq = document.querySelectorAll(".faq");
+
+        faq.forEach(faq => {
+            faq.addEventListener("click", () => {
+                faq.classList.toggle("active");
+            })
+        });
+    </script>
+</body>
+
+</html>
