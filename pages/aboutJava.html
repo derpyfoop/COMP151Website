@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/x-icon" href="../Images/javaOriginal.svg">
+    <title>About Java</title>
+    <style>
+        /* center element */
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+
+        #javainfo {
+            display: inline;
+            width:100%;
+            text-align: right;
+        }
+
+        #javaroadmap {
+            width: 100%;
+            background-color: black;
+        }
+
+        #aboutjava {
+            width: 100%;
+            background-color: #f40000;
+            display: flex;
+        }
+
+        #abouttext {
+            text-align: right;
+            width: 100%;
+            padding: 2em;
+            color: white;
+            font-size: larger;
+        }
+
+
+        img.abtimage {
+            height: 250px;
+        }
+
+        @media  screen and (max-width: 990px) {
+            #aboutjava {
+                display: flex;
+                flex-direction: column;
+            }
+
+            #abouttext h1 {
+                text-align: center;
+            }
+
+            #abouttext p {
+                text-align: left;
+            }
+
+            .center {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="Crt">
+        <!--MENU & HEADER-->
+        <div id="header">
+            <button id="menu-toggle">☰ Menu</button>
+            <div id="menu">
+                <button id="menu-close">✕</button>
+                <div id="menuLinks">
+                    <a class="menuLink" href="../index.html">Home</a>
+                    <a class="menuLink" href="syllabus.html">Syllabus</a>
+                    <a class="menuLink" href="form.html">Registration Form</a>
+                    <a class="menuLink" href="class.html">Class Materials & Quizzes</a>
+                    <a class="menuLink" href="about.html">About Us</a>
+                    <a class="menuLink" href="aboutJava.html">About Java</a>
+                    <a class="menuLink" href="faq.html">FAQs</a>
+                </div>
+
+            </div>
+
+            <a href="../index.html" id="headerLink"><img src="../Images/javaIcon.svg" alt="Java Icon"
+                    style="width: 2.5em;">
+                <h1>Java</h1>
+            </a>
+        </div>
+
+        <!--CONTENT-->
+
+        <div id="content">
+            <div id="javainfo">
+
+                <div id="aboutjava">
+
+                    <img src="../Images/javalogo.png" alt="java logo" class="abtimage">
+
+                    <div id="abouttext">
+                        <h1>
+                            About Java
+                        </h1>
+                        <br>
+                        <p>
+                            Java is a general-purpose, class-based, object-oriented programming language designed for
+                            having lesser implementation dependencies. It is a computing platform for application
+                            development. Java is fast, secure, and reliable, therefore. It is widely used for developing
+                            Java applications in laptops, data centers, game consoles, scientific supercomputers, cell
+                            phones, etc.
+                        </p>
+
+                        <p style="text-align: center; margin-top: 6em;">
+                            learn some java topics by clicking on them below!
+                        </p>
+                    </div>
+                </div>
+
+                <div id="javaroadmap">
+                    <img src="../Images/javasyntax.PNG" alt="java roadmap" usemap="#javainfo" class="center">
+
+                    <map name="javainfo">
+                        <area shape="circle" coords="93,70,51" href="https://www.w3schools.com/java/java_syntax.asp" target="_blank" />
+                        <area shape="circle" coords="198,128,51" href="https://www.w3schools.com/java/java_oop.asp" target="_blank" />
+                        <area shape="circle" coords="94,188,51" href="https://www.w3schools.com/java/java_ref_keywords.asp" target="_blank" />
+                        <area shape="circle" coords="197,244,51" href="https://www.w3schools.com/java/java_packages.asp" target="_blank" />
+                        <area shape="circle" coords="99,300,51" href="https://www.javatpoint.com/literals-in-java" target="_blank" />
+                        <area shape="circle" coords="491,127,51" href="https://www.w3schools.com/java/java_methods.asp" target="_blank" />
+                        <area shape="circle" coords="592,67,51" href="https://www.w3schools.com/java/java_arrays.asp" target="_blank" />
+                        <area shape="circle" coords="490,253,51" href="https://www.w3schools.com/java/java_interface.asp" target="_blank" />
+                        <area shape="circle" coords="590,184,51" href="https://www.w3schools.com/java/java_variables.asp" target="_blank" />
+                        <area shape="circle" coords="593,305,51" href="https://www.w3schools.com/java/java_data_types.asp" target="_blank" />
+                    </map>
+                </div>
+
+
+            </div>
+        </div>
+
+        <!--FOOTER-->
+
+        <div id="footer">
+            <p>Email <a href="mailto:chris.smith@bcc.edu.bb">Chris Smith</a> with any questions about the course!</p>
+            <p>And visit BCC official website <a href="https://bcc.edu.bb/" target="_blank">here!</a></p>
+        </div>
+    </div>
+    <script src="../script.js"></script>
+
+</body>
+
+</html>

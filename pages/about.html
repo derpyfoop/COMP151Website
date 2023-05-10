@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/x-icon" href="../Images/javaOriginal.svg">
+    <title>About Us</title>
+    <style>
+        #about {
+            width: 100%;
+            padding: 0 2em 2em 2em;
+        }
+
+        #textbox {
+            margin: auto;
+        }
+
+        .headers {
+            padding: 1em 0 1em 0;
+            text-align: center;
+        }
+
+        p {
+            padding: 0 1em 0 1em;
+        }
+
+        ul {
+            padding: 0 0 0 2em;
+        }
+
+
+        #images {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            gap: 1em;
+        }
+
+        /* To give a slightly cleaner look on devices with screen width of less than 990px */
+
+        @media screen and (max-width:990px) {
+            #images {
+                flex-wrap: wrap;
+            }
+
+            #images img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="Crt">
+        <!--MENU & HEADER-->
+        <div id="header">
+            <button id="menu-toggle">☰ Menu</button>
+            <div id="menu">
+                <button id="menu-close">✕</button>
+                <div id="menuLinks">
+                    <a class="menuLink" href="../index.html">Home</a>
+                    <a class="menuLink" href="syllabus.html">Syllabus</a>
+                    <a class="menuLink" href="form.html">Registration Form</a>
+                    <a class="menuLink" href="class.html">Class Materials & Quizzes</a>
+                    <a class="menuLink" href="about.html">About Us</a>
+                    <a class="menuLink" href="aboutJava.html">About Java</a>
+                    <a class="menuLink" href="faq.html">FAQs</a>
+                </div>
+
+            </div>
+
+            <a href="../index.html" id="headerLink"><img src="../Images/javaIcon.svg" alt="Java Icon"
+                    style="width: 2.5em;">
+                <h1>Java</h1>
+            </a>
+        </div>
+
+        <!--CONTENT-->
+
+        <div id="content">
+            <div id="about">
+                <div id="textbox">
+
+                    <h1 class="headers">
+                        About Us
+                    </h1>
+                    <p>
+                        The Barbados Community College (BCC) was established in 1968, This was done by an Act of
+                        Parliament - the Barbados Community College Act, 1968-23. The Act was amended in 1990 to empower
+                        the College to grant Bachelor Degrees, Associate Degrees, Diplomas and Certificates, to students
+                        who successfully complete approved programmes of study.
+                        <br>
+                        <br>
+                        Three hundred and twenty-five students were admitted to the College in January 1969 in three
+                        Divisions:
+                    </p>
+
+                    <br />
+
+                    <ul>
+                        <li>Commerce</li>
+                        <li>Liberal Arts</li>
+                        <li>Science</li>
+                    </ul>
+
+                    <h1 class="headers">
+                        Our Mission
+                    </h1>
+
+                    <p>
+                        BCC is designed to cater to the educational needs of as wide a cross-section of the
+                        post-secondary and adult population as its facilities permit. We are a dynamic institution which
+                        seeks to respond positively to the needs of our students. We are committed to the development of
+                        a creative and informed citizenry in a vibrant, democratic society.
+                    </p>
+
+                    <p>
+                        One of our major goals is to develop a truly comprehensive range of curricular offerings to
+                        foster the educational, personal and social growth of all our students, and to enhance their
+                        ability to contribute to the development needs of the country.
+                    </p>
+
+                    <br>
+
+                    <h1 class="headers">Division Of Computer Studies</h1>
+                    <p>
+                        In BCC’s Division of Computer Studies, we train the technological leaders of tomorrow thus
+                        giving them an advantage in employment or for further study. We take your raw talent and tailor
+                        it to make you a solution to the world’s technological challenges. Across the programmes,
+                        students acquire skills in hardware, networking, software development, database management,
+                        accounting, internet applications and mobile applications which are utilized in solving problems
+                        in a variety of disciplines and businesses.
+                    </p>
+
+
+                </div>
+
+                <br>
+
+                <div id="images">
+                    <img src="../Images/BCC1.jpg" alt="BCC1" class="BCC" width="49.1%" />
+                    <img src="../Images/BCC2.jpg" alt="BCC1" class="BCC" width="49.1%" />
+                </div>
+
+            </div>
+        </div>
+
+
+        <!--FOOTER-->
+
+        <div id="footer">
+            <p>Email <a href="mailto:chris.smith@bcc.edu.bb">Chris Smith</a> with any questions about the course!</p>
+            <p>And visit BCC official website <a href="https://bcc.edu.bb/" target="_blank">here!</a></p>
+        </div>
+    </div>
+    <script src="../script.js"></script>
+</body>
+
+</html>
