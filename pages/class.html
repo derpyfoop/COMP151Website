@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Website to inform persons that the Barbados Community College is offering a course in Java program">
+  <meta name="keywords" content="Java, BCC, Barbados Community College, COMP151">
+  <meta name="author" content="Matthew Ward | Romario Bishop | Garth Fredriksen | Ode Millington">
+  <link rel="stylesheet" href="../styles.css">
+  <title> Course page </title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+      /* this makes the in page anchor jump process a smooth scroll*/
+      scroll-padding-top: 170px;
+      /* this add some top padding on the top of the jump so that the sticky
+            header won't cover as much of the section it is jumping to*/
+    }
+
+    a:link {
+      text-decoration: none;
+    }
+
+
+
+    #content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex-grow: 1;
+    }
+
+
+    #coursemain p {
+      font-size: 200%;
+
+    }
+
+    #header {
+      flex-direction: column;
+      z-index: 9999;
+      /* this makes the sticky menu always cover the content and avoid overlaps,
+         the element with the higher z index gets priority*/
+    }
+
+    #headerText {
+      display: flex;
+      flex-direction: row;
+    }
+
+    #footer,
+    p {
+      font-size: 10px;
+    }
+
+    #sectionjump {
+      display: flex;
+      flex-direction: row;
+      gap: 1em;
+      font-size: 2em;
+    }
+
+    #sectionOne {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 5em;
+      background-color: black;
+      color: white;
+    }
+
+
+    #sectionTwo {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 5em;
+      background-color: #f40000;
+      color: white;
+    }
+
+    #sectionThree {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 5em;
+      background-color: black;
+      color: white;
+    }
+
+    #sectionFour {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 5em;
+      background-color: #f40000;
+      color: white;
+    }
+
+    .selectionLinks,
+    .selectionLinks:visited {
+      text-decoration: none;
+      color: white;
+      background-color: black;
+      padding: .2em;
+      border-radius: 15px;
+    }
+
+    .selectionLinks:hover {
+      color: black;
+      background-color: white;
+      padding: .2em;
+      border-radius: 15px;
+    }
+
+    .selectionLinks:active {
+      background-color: black;
+      color: #f40000;
+      padding: .2em;
+      border-radius: 15px;
+    }
+
+
+    .unitTitle {
+      text-align: center;
+      font-size: 275%;
+    }
+
+    titleAndText,
+    p {
+      font-size: 2em;
+      color: skyblue;
+    }
+
+    .contentLinksRed,
+    .contentLinksRed:visited {
+      text-decoration: none;
+      color: white;
+    }
+
+    .contentLinksRed:hover {
+      color: black;
+    }
+
+    .contentLinksRed:active {
+      color: white;
+    }
+
+    .contentLinksBlack,
+    .contentLinksBlack:visited {
+      text-decoration: none;
+      color: white;
+    }
+
+    .contentLinksBlack:hover {
+      color: red;
+    }
+
+    .contentLinksBlack:active {
+      color: white;
+    }
+
+    /* This will allow the videos to be displayed correctly on a screen smaller than 990px */
+
+    @media screen and (max-width:990px) {
+
+      video,
+      iframe {
+        width: 100%;
+        height: 100%;
+      }
+
+      .selectionLinks,
+      .selectionLinks:visited {
+        text-decoration: none;
+        color: white;
+        background-color: black;
+        padding: .2em;
+        border-radius: 10px;
+      }
+
+      .selectionLinks:hover {
+        color: black;
+        background-color: white;
+        padding: .2em;
+        border-radius: 10px;
+      }
+
+      .selectionLinks:active {
+        background-color: black;
+        color: #f40000;
+        padding: .2em;
+        border-radius: 10px;
+      }
+
+      #sectionjump {
+        font-size: 1em;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <div id="Crt">
+    <!--MENU & HEADER-->
+    <div id="header">
+      <button id="menu-toggle">☰ Menu</button>
+      <div id="menu">
+        <button id="menu-close">✕</button>
+        <div id="menuLinks">
+          <a class="menuLink" href="../index.html">Home</a>
+          <a class="menuLink" href="syllabus.html">Syllabus</a>
+          <a class="menuLink" href="form.html">Registration Form</a>
+          <a class="menuLink" href="class.html">Class Materials & Quizzes</a>
+          <a class="menuLink" href="events.html">Events</a>
+          <a class="menuLink" href="about.html">About Us</a>
+          <a class="menuLink" href="aboutJava.html">About Java</a>
+          <a class="menuLink" href="faq.html">FAQs</a>
+        </div>
+
+      </div>
+
+
+      <div id="headerText">
+        <a href="../index.html" id="headerLink"><img src="../Images/javaIcon.svg" alt="Java Icon" style="width: 2.5em;">
+          <h1>Java</h1>
+        </a>
+      </div>
+
+      <br />
+
+      <div id="sectionjump">
+
+        <a class="selectionLinks" href="#sectionOne"> Unit one </a>
+        <a class="selectionLinks" href="#sectionTwo"> Unit two </a>
+        <a class="selectionLinks" href="#sectionThree"> Unit three </a>
+        <a class="selectionLinks" href="#sectionFour"> Learn More </a>
+
+
+      </div>
+    </div>
+
+    <!--CONTENT-->
+
+    <div id="content">
+
+      <div id="sectionOne">
+        <div class="titleAndText">
+          <br />
+          <h1 class="unitTitle"> Unit One - Java Basics/Sequence </h1>
+          <hr />
+          <br />
+          <div style="text-align:center;">
+            <video width="800" height="500" controls> 
+              <source src="../Videos/Sequence.mkv" type="video/mp4">
+            </video>
+          </div>
+          <hr />
+          <br />
+          <p>Power Point- <a class="contentLinksBlack" href="../PowerPoints/COMP151_Sequence.pptx"> Click here to
+              download </a></p>
+          <p>Sequence Quiz - <a class="contentLinksBlack" href="https://quizizz.com/embed/quiz/645ff4fa5833de001fb71a1a"
+              target="_blank"> Test Your Knowledge-
+              Java Basics and Sequence</a></p>
+        </div>
+
+      </div>
+
+      <div id="sectionTwo">
+        <div class="titleAndText">
+          <br />
+          <h1 class="unitTitle"> Unit Two - Selection Structures</h1>
+          <hr />
+          <br />
+          <div style="text-align:center;">
+            <video width="800" height="500" controls> 
+              <source src="../Videos/Selection.mkv" type="video/mp4">
+            </video>
+          </div>
+          <hr />
+          <br />
+          <p>Power Point- <a class="contentLinksRed" href="../PowerPoints/COMP151_Selection.pptx"> Click here to
+              download </a></p>
+          <p>Selection Quiz - <a class="contentLinksRed" href="https://quizizz.com/embed/quiz/6464106aaea691001d3a0db0"
+              target="_blank"> Test Your Knowledge-
+              Selection Quiz Practice</a></p>
+        </div>
+      </div>
+
+      <div id="sectionThree">
+        <div class="titleAndText">
+          <br />
+          <h1 class="unitTitle"> Unit Three - Repetition Structures </h1>
+          <hr />
+          <br />
+          <div style="text-align:center;">
+            <video width="800" height="500" controls> 
+              <source src="../Videos/Repetition.mkv" type="video/mp4">
+            </video>
+          </div>
+          <hr />
+          <br />
+          <p>Power Point- <a class="contentLinksBlack" href="../PowerPoints/COMP151_Repetion.pptx"> Click here to
+              download </a></p>
+          <p>Repetition Quiz - <a class="contentLinksBlack"
+              href="https://quizizz.com/embed/quiz/646576fd3ba167001d8d9a22" target="_blank"> Test Your Knowledge-
+              Repetition Quiz Practice</a></p>
+        </div>
+      </div>
+
+      <div id="sectionFour">
+        <div class="titleAndText">
+          <br />
+          <h1>Learn More Or Sign Up!</h1>
+          <p>Learn more about this course <a class="contentLinksRed" href="../Pages/syllabus.html">here</a> or skip the
+            reading and dive
+            head first into this course by <a class="contentLinksRed" href="../Pages/form.html">signing up today!</a>
+          </p>
+
+          <div style="text-align:center">
+
+            <iframe src="https://www.youtube.com/embed/GoXwIVyNvX0" width="800" height="500"></iframe>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!--FOOTER-->
+
+    <div id="footer">
+      <p>Email <a href="mailto:chris.smith@bcc.edu.bb">Chris Smith</a> with any questions about the course!</p>
+      <p>And visit BCC official website <a href="https://bcc.edu.bb/" target="_blank">here!</a></p>
+    </div>
+  </div>
+  <script src="../script.js"></script>
+</body>
+
+</html>
